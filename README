@@ -3,4 +3,6 @@ To play tetris:
 -download all files and extract them into one folder/catalogue.
 -make sure you have installed python
 -either type and run TheGame.py via cmd or double click on TheGame.py icon
+-you can login as 123 with password 123 or any other account existing in user.txt
+-you can also create a new account
 -enjoy the game :)
