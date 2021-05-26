@@ -1,0 +1,10 @@
+Jakub	120
+KUBA	40
+KUBA	40
+asia	30
+Jakub	30
+Jakub	10
+123	10
+Empty1	0
+Empty2	0
+Empty3	0
