@@ -411,7 +411,8 @@ class TheGame:
                                     for i in file:
                                         i= i[:-1]
                                         l = i.split('\t')
-                                        usersList.append((l[0], l[1]))
+                                        if len(l) == 2:
+                                            usersList.append((l[0], l[1]))
                                 isInBase = False
                                 for (n, h) in usersList:
                                     if (str(n), str(h)) == (str(login_text), str(password_text)):
@@ -423,6 +424,7 @@ class TheGame:
                                     f = open("users.txt", 'a')
                                     f.write(login_text + "\t" + password_text+"\n")
                                     faze = 2
+                                    f.close()
             pygame.display.update()
             self.mainClock.tick(60)
 
@@ -506,7 +508,8 @@ class TheGame:
                                     for i in file:
                                         i = i[:-1]
                                         l = i.split('\t')
-                                        usersList.append((l[0], l[1]))
+                                        if len(l) == 2:
+                                            usersList.append((l[0], l[1]))
                                 isInBase = False
                                 for (n, h) in usersList:
                                     if ((str(n), str(h)) == (str(login_text), str(password_text))):  # username
